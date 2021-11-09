@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dailod_box"
+    android:elevation="20dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:background="@drawable/offline"
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:foreground="@drawable/cornor"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:text="No Internet Connection"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Make Sure WiFi/Mobile Data is on, Then try agin"/>
+
+    <TextView
+        android:id="@+id/BTN_RETRY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/BTN"
+        android:padding="9dp"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:text="RETRY"/>
+
+</LinearLayout>

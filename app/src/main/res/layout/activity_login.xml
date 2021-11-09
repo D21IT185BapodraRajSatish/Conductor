@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_img"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/TXT_LOGIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:text="Conductor\n     Login"
+            android:textSize="40sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CARD_LAYOUT"
+            style="@style/LAYOUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TXT_LOGIN"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:elevation="20sp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="9dp"
+                    android:hint="E-Mail"
+                    android:isScrollContainer="true"
+                    android:theme="@style/TEXTINPUTLAYOUT"
+                    app:boxBackgroundColor="#0000"
+                    app:boxBackgroundMode="outline"
+                    app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Email1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_email"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Email"
+                    android:layout_margin="9dp"
+                    android:hint="Password"
+                    android:isScrollContainer="true"
+                    android:theme="@style/TEXTINPUTLAYOUT"
+                    app:boxBackgroundColor="#0000"
+                    app:boxBackgroundMode="outline"
+                    app:hintTextAppearance="@style/TXT_VIEW_EDIT"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Password1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/Log_IN"
+                    style="@style/BTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Password"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:padding="10dp"
+                    android:text="LOG IN"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/BTN_Forgot_Password"
+                    style="@style/BTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Log_IN"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Forgot Password"
+                    android:visibility="gone"
+                    android:textSize="12sp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</ScrollView>

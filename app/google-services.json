@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "605108837085",
+    "firebase_url": "https://smart-card-for-bus-service-default-rtdb.firebaseio.com",
+    "project_id": "smart-card-for-bus-service",
+    "storage_bucket": "smart-card-for-bus-service.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605108837085:android:2ed9ba0975a97c759c5934",
+        "android_client_info": {
+          "package_name": "com.example.proto_type_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605108837085-hksp13tefdssrkcfiu0hd73cg4fq0vl9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHuW_7CNZogwGa-2bd8LB5VtsyAJ3oN4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605108837085-hksp13tefdssrkcfiu0hd73cg4fq0vl9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605108837085:android:fd3d15ccbf0a9cd69c5934",
+        "android_client_info": {
+          "package_name": "com.example.proto_type_12"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605108837085-hksp13tefdssrkcfiu0hd73cg4fq0vl9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHuW_7CNZogwGa-2bd8LB5VtsyAJ3oN4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605108837085-hksp13tefdssrkcfiu0hd73cg4fq0vl9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

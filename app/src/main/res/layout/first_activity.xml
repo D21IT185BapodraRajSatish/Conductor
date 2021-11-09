@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".First_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="4dp"
+            android:theme="@style/Toolbar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+        <TextView
+            android:id="@+id/Pay_ISSUE_TICKET"
+            style="@style/TEXT_VIEW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_toEndOf="@id/Pay_ISSUE_TICKET1"
+            android:layout_toRightOf="@id/Pay_ISSUE_TICKET1"
+            android:paddingTop="20dp"
+            android:text=" : Pay" />
+
+        <TextView
+            android:id="@+id/Pay_ISSUE_TICKET1"
+            style="@style/TEXT_VIEW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="20dp"
+            android:text="₹ 0.0" />
+
+        <TextView
+            android:id="@+id/TXT_VIEW_SP_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Pay_ISSUE_TICKET"
+            android:paddingTop="20dp"
+            android:text="Root" />
+
+        <Spinner
+            android:id="@+id/SP1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TXT_VIEW_SP_1" />
+
+        <TextView
+            android:id="@+id/TXT_VIEW_SP_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SP1"
+            android:text="Source" />
+
+        <Spinner
+            android:id="@+id/SP2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TXT_VIEW_SP_2" />
+
+        <TextView
+            android:id="@+id/TXT_VIEW_SP_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SP2"
+            android:text="Destination" />
+
+        <Spinner
+            android:id="@+id/SP3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TXT_VIEW_SP_3" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/CARD_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SP3"
+            android:layout_margin="9dp"
+            android:hint="Card ID"
+            android:isScrollContainer="true"
+            android:theme="@style/TEXTINPUTLAYOUT"
+            app:boxBackgroundColor="#0000"
+            app:boxBackgroundMode="outline"
+            app:hintTextAppearance="@style/TXT_VIEW_EDIT">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/CARD_ID1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/SUBMIT_BTN"
+            style="@style/BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CARD_ID"
+            android:layout_alignEnd="@id/CARD_ID"
+            android:layout_alignRight="@id/CARD_ID"
+            android:layout_margin="9dp"
+            android:padding="10dp"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/GET_ID_BTN"
+            style="@style/BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CARD_ID"
+            android:layout_alignLeft="@id/CARD_ID"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginBottom="9dp"
+            android:elevation="20dp"
+            android:padding="10dp"
+            android:text="GET CARD ID" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
